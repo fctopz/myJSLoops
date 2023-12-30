@@ -1,13 +1,33 @@
-//alert("sample text");
-class Rectangle{
+const names = ['Lincoln', 'Daniel', 'Tabitha', 'McLeod']
 
-    constructor(_width,_height,_color){
-        this.width = _width;
-        this.height = _height;
-        this.color = _color;
+function forLoop()
+{
+    for (let i = 0; i < names.length; i++) {
+        const currentName = names[i]
+        console.log(currentName, 'is at index', i)
+    }
+    console.log("-----------------------");
+    console.log("end of for loop.");
+    console.log("-----------------------");
+}
 
-        console.log("This is a rectangle! \n width:"+ this.width +" height:"+this.height+" color:"+this.color);
+function whileLoop()
+{
+    let i=0;
+    while (i<names.length)
+    {
+        const currentName = names[i++]
+        console.log(currentName, 'is at index', i)    
+    }
+    console.log("-----------------------");
+    console.log("end of while loop.");
+    console.log("-----------------------");
+}
+
+function forOfLoop()
+{
+    for (const name of names)
+    {
+        console.log(name);
     }
 }
-let r1 = new Rectangle(3,5,"blue");
-let r2 = new Rectangle(4,9,"red");
