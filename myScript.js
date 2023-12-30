@@ -31,6 +31,16 @@ function forOfLoop()
         console.log(name);
     }
     console.log("-----------------------");
+    for (let name in names)
+    {
+        console.log(name);
+    }
+    console.log("-----------------------");
+    for (let name of names)
+    {
+        console.log(name);
+    }
+    console.log("-----------------------");
     console.log("end of for-of loop.");
     console.log("-----------------------");
 }
