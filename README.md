@@ -1,0 +1,2 @@
+# myJS
+sample code hello
